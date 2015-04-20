@@ -88,6 +88,6 @@ module.exports = function(RED) {
 
     }
 
-    RED.nodes.registerType("bean led",BeanLedNode);
+    RED.nodes.registerType("led",BeanLedNode);
 
 }

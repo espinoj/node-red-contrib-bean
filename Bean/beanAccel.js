@@ -70,6 +70,6 @@ module.exports = function(RED) {
         beanNode.configureBeanStatuses.call(this);
     }
 
-    RED.nodes.registerType("bean accel",BeanAccelNode);
+    RED.nodes.registerType("acceleration",BeanAccelNode);
 
 }

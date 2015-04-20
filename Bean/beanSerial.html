@@ -14,7 +14,7 @@
   limitations under the License.
 -->
 
-<script type="text/x-red" data-template-name="bean serial">
+<script type="text/x-red" data-template-name="serial">
    <div class="form-row node-input-bean">
         <label for="node-input-bean"><i class="fa fa-random"></i> Bean</label>
         <input type="text" id="node-input-bean">
@@ -58,7 +58,7 @@
     <div class="form-tips" id="tip-bin" hidden>Tip: In timeout mode timeout starts from arrival of first character.</div>
 </script>
 
-<script type="text/x-red" data-help-name="bean serial">
+<script type="text/x-red" data-help-name="serial">
     <p><b>Outgoing Serial:</b></p>
     <p>Allows you to send serial data to a Bean.</p>
     <p>Only the <b>msg.payload</b> is sent.</p>
@@ -74,7 +74,7 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('bean serial',{
+    RED.nodes.registerType('serial',{
         category: 'LightBlue Bean',      // the palette category
         defaults: {             // defines the editable properties of the node
             name: {value:""},

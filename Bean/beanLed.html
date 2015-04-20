@@ -14,7 +14,7 @@
   limitations under the License.
 -->
 
-<script type="text/x-red" data-template-name="bean led">
+<script type="text/x-red" data-template-name="led">
    <div class="form-row node-input-bean">
         <label for="node-input-bean"><i class="fa fa-random"></i> Bean</label>
         <input type="text" id="node-input-bean">
@@ -26,7 +26,7 @@
 </script>
 
 
-<script type="text/x-red" data-help-name="bean led">
+<script type="text/x-red" data-help-name="led">
    <p>This node allows you to set the <b>red</b>, <b>green</b>, and <b>blue</b> values of a Bean&#39;s LED.</p>
    <p><br/><b>Option 1:</b> </p>
    <p>Input a message with a string payload containing one of the four options: "Red", "Green", "Blue", or "Off"</p>
@@ -39,7 +39,7 @@
 
 
 <script type="text/javascript">
-    RED.nodes.registerType('bean led',{
+    RED.nodes.registerType('led',{
         category: 'LightBlue Bean',      // the palette category
         defaults: {             // defines the editable properties of the node
             name: {name:""},
@@ -56,6 +56,7 @@
         },
         labelStyle: function() { // sets the class to apply to the label
             return this.name?"node_label_italic":"";
-        }
+        },
+        align: 'right'
     });
 </script>

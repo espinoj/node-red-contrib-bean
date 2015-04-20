@@ -67,6 +67,6 @@ module.exports = function(RED) {
         beanNode.configureBeanStatuses.call(this);
     }
 
-    RED.nodes.registerType("bean temp",BeanTempNode);
+    RED.nodes.registerType("temperature",BeanTempNode);
 
 }
